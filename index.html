@@ -1,0 +1,29 @@
+<html>
+<head>
+<script src="js/angular.js"></script>
+<script src="js/app.js"></script>
+
+</head>
+<body>
+<div ng-app="myApp" ng-controller="myCtrl">
+       <h1>{{winner}}</h1>
+
+            <img class="magicpuppy" src="{{currentPicture}}" alt="picture of guy"/>
+			<br/>
+			<label>
+			<input type="radio" name="question" value="{{questionName[0]}}">
+			{{questionName[0]}}
+			</label><br/>
+			<input type="radio" name="question" value="{{questionName[1]}}">
+			{{questionName[1]}}
+			</label><br/>
+			<input type="radio" name="question" value="{{questionName[2]}}">
+			{{questionName[2]}}
+			</label><br/>
+			<input type="radio" name="question" value="{{questionName[3]}}">
+			{{questionName[3]}}
+			</label><br/>
+<button ng-click="submitAnswer()">Answer</button>
+<button ng-click="nextPicture()">Play Again</button></div>
+</body>
+</html>
